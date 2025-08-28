@@ -1,2 +1,30 @@
-# Adsovetzky-Omarchy-s-Waybar
-Adsovetzky, Omarchy Waybar, yep
+# Adso's Omarchy's waybar
+
+## Preview
+
+<img src="image.png">
+<img src="image2.png">
+<img src="image3.png">
+<img src="image4.png">
+
+## Install
+
+This will back up your current Waybar configuration files and add the clone one.
+
+```sh
+# Clone the Waybar config from this repo
+git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar
+cd Adsovetzky-Omarchy-s-Waybar
+
+# Backup your current config and style
+cp -r ~/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc.bak
+cp -r ~/.config/waybar/style.css ~/.config/waybar/style.css.bak
+
+# Replace with the new Waybar configuration and style from this repo
+cp -r ./config.jsonc ~/.config/waybar/config.jsonc
+cp -r ./style.css ~/.config/waybar/style.css
+
+# Delete the clone
+cd ..
+rm -rf Adsovetzky-Omarchy-s-Waybar
+```
