@@ -27,4 +27,8 @@ cp -r ./style.css ~/.config/waybar/style.css
 # Delete the clone
 cd ..
 rm -rf Adsovetzky-Omarchy-s-Waybar
+
+#and now, enjoy "my" new waybar!
+
+omarchy-restart-waybar
 ```
