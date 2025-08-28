@@ -16,9 +16,10 @@ This will back up your current Waybar configuration files and add the clone one.
 git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar
 cd Adsovetzky-Omarchy-s-Waybar
 
-# Backup your current config and style
-cp -r ~/.config/waybar/config.jsonc ~/.config/waybar/config.jsonc.bak
-cp -r ~/.config/waybar/style.css ~/.config/waybar/style.css.bak
+# Backup your current config and style into "backup" folder
+mkdir -p ~/.config/waybar/backup
+cp -r ~/.config/waybar/config.jsonc ~/.config/waybar/backup/config.jsonc.bak
+cp -r ~/.config/waybar/style.css ~/.config/waybar/backup/style.css.bak
 
 # Replace with the new Waybar configuration and style from this repo
 cp -r ./config.jsonc ~/.config/waybar/config.jsonc
