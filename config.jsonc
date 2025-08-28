@@ -61,7 +61,7 @@
     "on-click": "alacritty -e btop"
   },
   "clock": {
-  "format": "{:%a %b %d %I:%M %p}",
+  "format": "{:%A %B %d %I:%M %p}",
   "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
   },
   "network": {
