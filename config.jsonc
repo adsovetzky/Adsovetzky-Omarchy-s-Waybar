@@ -9,6 +9,10 @@
     "hyprland/workspaces",
     "hyprland/window"
   ],
+  "modules-center": [
+    "clock",
+    "custom/update"
+  ],
   "modules-right": [
     "mpris",
     "group/tray-expander",
@@ -17,9 +21,9 @@
     "bluetooth",
     "pulseaudio",
     "cpu",
-    "battery",
-    "clock",
-    "custom/update"
+    "battery"
+    // "clock",
+    // "custom/update"
   ],
   "backlight": {
   "device": "intel_backlight",
@@ -32,8 +36,8 @@
 
   "network": {
     "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
-    "format" : "{icon} {essid} ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
-    "format-wifi" : "{icon} {essid} ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+    "format" : "{icon} {essid}",
+    "format-wifi" : "{icon} {essid}",
     "format-ethernet" : "󰀂 ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
     "format-disconnected" : "󰖪",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
@@ -87,7 +91,7 @@
   },
   "clock": {
     "format": "{:%I:%M %p}",
-    "format-alt": "{:%A %d %B}",
+    "format-alt": "{:%A %d/%m/%Y}",
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
   },
   "battery": {
