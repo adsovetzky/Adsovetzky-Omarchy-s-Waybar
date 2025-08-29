@@ -9,7 +9,7 @@
 
 ## Install
 
-This will back up your current Waybar configuration files and add the clone one.
+This will back up your current Waybar configuration files and add the clone one, copy all of this command, paste it into ur terminal and everything will be fine.
 
 ```sh
 # Clone the Waybar config from this repo
