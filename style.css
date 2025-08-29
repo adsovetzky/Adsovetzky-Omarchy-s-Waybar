@@ -35,6 +35,7 @@ window#waybar {
   opacity: 0.5;
 }
 
+#backlight,
 #window,
 #mpris,
 #tray,

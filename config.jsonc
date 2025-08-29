@@ -12,14 +12,39 @@
   "modules-right": [
     "mpris",
     "group/tray-expander",
-    "bluetooth",
+    "backlight",
     "network",
+    "bluetooth",
     "pulseaudio",
     "cpu",
     "battery",
     "clock",
     "custom/update"
   ],
+  "backlight": {
+  "device": "intel_backlight",
+  "format": "{percent}% {icon}",
+  "format-icons": ["", ""],
+  "on-scroll-up": "brightnessctl set +5%",
+  "on-scroll-down": "brightnessctl set 5%-",
+  "interval": 2
+},
+
+  "network": {
+    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+    "format" : "{icon} {essid} ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+    "format-wifi" : "{icon} {essid} ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+    "format-ethernet" : "󰀂 ↓{bandwidthDownBytes} ↑{bandwidthUpBytes}",
+    "format-disconnected" : "󰖪",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+    "tooltip-format-disconnected": "Disconnected",
+    "interval": 3,
+    "nospacing": 1,
+    "on-click": "alacritty --class=Impala -e impala"
+  },
+
+  // (phần dưới giữ nguyên như cũ)
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -61,21 +86,9 @@
     "on-click": "alacritty -e btop"
   },
   "clock": {
-  "format": "{:%A %B %d %I:%M %p}",
-  "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
-  },
-  "network": {
-    "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
-    "format" : "{icon}",
-    "format-wifi" : "{icon}",
-    "format-ethernet" : "󰀂",
-    "format-disconnected" : "󰖪",
-    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-    "tooltip-format-ethernet": "⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
-    "tooltip-format-disconnected": "Disconnected",
-    "interval": 3,
-    "nospacing": 1,
-    "on-click": "alacritty --class=Impala -e impala"
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%A %d %B}",
+    "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
   },
   "battery": {
     "format": "{capacity}% {icon}",
@@ -125,7 +138,7 @@
     },
     "modules": [
       "custom/expand-icon",
-    "tray"
+      "tray"
     ]
   },
   "custom/expand-icon": {
@@ -137,16 +150,16 @@
     "spacing": 12
   },
   "mpris": {
-  "format": "{player_icon} {artist} - {title}",
-  "format-paused": "{status_icon} <i>{artist} - {title}</i>",
-  "player-icons": {
-    "default": "▶",
-    "mpv": "🎵"
-  },
-  "status-icons": {
-    "paused": "⏸"
-  },
-  "max-length": 50
+    "format": "{player_icon} {artist} - {title}",
+    "format-paused": "{status_icon} <i>{artist} - {title}</i>",
+    "player-icons": {
+      "default": "▶",
+      "mpv": "🎵"
+    },
+    "status-icons": {
+      "paused": "⏸"
+    },
+    "max-length": 50
   },
   "hyprland/window": {
     "format": "{}"
