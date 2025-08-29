@@ -48,7 +48,6 @@
     "on-click": "alacritty --class=Impala -e impala"
   },
 
-  // (phần dưới giữ nguyên như cũ)
   "hyprland/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -157,7 +156,7 @@
     "format": "{player_icon} {artist} - {title}",
     "format-paused": "{status_icon} <i>{artist} - {title}</i>",
     "player-icons": {
-      "default": "▶",
+      "default": "🎵"",
       "mpv": "🎵"
     },
     "status-icons": {
