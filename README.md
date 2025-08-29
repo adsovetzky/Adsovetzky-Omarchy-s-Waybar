@@ -2,10 +2,11 @@
 
 ## Preview
 
-<img src="image.png">
-<img src="image2.png">
-<img src="image3.png">
-<img src="image4.png">
+(i dont have picture, will add it later)
+// <img src="image.png">
+// <img src="image2.png">
+// <img src="image3.png">
+// <img src="image4.png">
 
 ## Install
 
