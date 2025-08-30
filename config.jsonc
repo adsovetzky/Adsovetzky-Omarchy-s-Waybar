@@ -95,6 +95,7 @@
   "clock": {
     "format": "{:%I:%M %p}",
     "format-alt": "{:%A %d/%m/%Y}",
+    "tooltip": false,
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
   },
   "battery": {
