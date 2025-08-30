@@ -6,10 +6,7 @@
 
 ## Preview
 
-<img src="image.png">
-<img src="image2.png">
-<img src="image3.png">
-<img src="image4.png">
+no image, i will add it later
 
 ## Install
 
