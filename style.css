@@ -13,6 +13,7 @@
     border-radius: 0;
     font-family: 'JetBrains Mono';
     font-size: 12px;
+    font-weight: bold;
     min-height: 0;
 }
 
@@ -73,20 +74,16 @@ window#waybar {
 /* --- Specific Module Styles & Overrides --- */
 #window {
     margin: 5px 0;
-    background: @background;
     padding: 0 10px;
     border-radius: 16px;
     margin-left: 5px;
-    color: @foreground;
 }
 
 #mpris {
     margin: 5px 0;
-    background: @background;
     padding: 0 10px;
     border-radius: 16px;
     margin-right: 5px;
-    color: @foreground;
 }
 
 window#waybar.empty #window {
@@ -102,12 +99,11 @@ window#waybar.empty #window {
 }
 
 #tray-expander {
-  background-color: @background;
-  color: @foreground;
-  margin: 5px 0;
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
-  padding-left: 10px;
+    background: @background;
+    margin: 5px 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 10px;
 }
 
 #battery {
@@ -127,15 +123,8 @@ window#waybar.empty #window {
 }
 
 #clock {
-    background-color: @accent;
-    color: @base-bg;
     border-radius: 16px;
     padding-right: 10px;
-}
-
-#clock:hover {
-    background-color: @background;
-    color: @foreground;
 }
 
 #workspaces {
@@ -148,7 +137,6 @@ window#waybar.empty #window {
 }
 
 #workspaces button {
-    color: @inactive;
     background: transparent;
     padding: 0 6px;
     border-radius: 10px;
@@ -156,10 +144,6 @@ window#waybar.empty #window {
 
 #workspaces button:hover {
     background-color: alpha(#B9F6CA, 0.1);
-}
-
-#workspaces button.active {
-    color: @accent;
 }
 
 /* --- Module States --- */
