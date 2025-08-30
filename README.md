@@ -1,8 +1,10 @@
 # Adso's Omarchy's waybar
 
-## Preview
+## Credit
 
 * great inspiration from <a herf ="https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main">forest green theme</a>!
+
+## Preview
 
 <img src="image.png">
 <img src="image2.png">
