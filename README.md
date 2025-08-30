@@ -2,7 +2,7 @@
 
 ## Credit
 
-* great inspiration from <a herf ="https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main">forest green theme</a>!
+* great inspiration from [forest green theme](https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main)!
 
 ## Preview
 
