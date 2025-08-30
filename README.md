@@ -2,6 +2,8 @@
 
 ## Preview
 
+* great inspiration from <a herf ="https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main">forest green theme</a>!
+
 <img src="image.png">
 <img src="image2.png">
 <img src="image3.png">
