@@ -9,11 +9,11 @@
 
 ## Preview
 
-* Waybar v1.3
+* Waybar v1.3)
 ![Waybar 1.3](image.png)
 ![Waybar 1.3](image3.png)
 
-* Waybar v1.3b
+* Waybar v1.3b)
 ![Waybar 1.3b](image5.png)
 ![Waybar 1.3b](image6.png)
 
