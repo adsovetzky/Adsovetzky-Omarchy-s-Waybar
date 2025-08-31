@@ -32,6 +32,9 @@ Choose the version of Waybar you want to use, copy the command, paste it into yo
 <summary><strong>Waybar v1.3</strong></summary>
 
 ```
+#install wttr package
+yay -S wttr
+
 # clone the config from github
 git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
 cd Adsovetzky-Omarchy-s-Waybar
