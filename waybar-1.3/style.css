@@ -48,6 +48,8 @@ mpris#waybar.empty #mpris {
   opacity: 0.5;
 }
 
+#custom-weather,
+#memory,
 #custom-update,
 #backlight,
 #window,
@@ -69,6 +71,9 @@ mpris#waybar.empty #mpris {
   margin: 5px 2;
 }
 
+#memory, #custom-weather {
+  margin-right: -10px;
+}
 #pulseaudio {
   padding-right: 15px;
 }
