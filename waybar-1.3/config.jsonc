@@ -91,7 +91,17 @@
   "clock": {
     "format": "{:%I:%M %p}",
     "format-alt": "{:%A %d/%m/%Y}",
-    "tooltip-format": "{:%A %d/%m/%Y %I:%M %p}",
+    "tooltip-format": "<span>{calendar}</span>",
+    "calendar": {
+      "mode": "mouth",
+      "mode-mon-col": 3,
+      "on-click-right": "mode",
+      "format": {
+        "mouth": "<span color='#ffead3'><b>{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b>{}</b></span>",
+      },
+    },
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
   },
   "battery": {

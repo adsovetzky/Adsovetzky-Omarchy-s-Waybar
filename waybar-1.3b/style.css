@@ -86,4 +86,5 @@ mpris#waybar.empty #mpris {
 tooltip {
   border-radius: 10px;
   padding: 2px;
+  opacity: 0.9;
 }
