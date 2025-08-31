@@ -22,7 +22,7 @@ window#waybar.empty #window {
     margin-left: 0;
 }
 
-window#waybar.empty #mpris {
+mpris#waybar.empty #mpris {
   background: transparent;
   padding: 0;
   margin-right: 0;
