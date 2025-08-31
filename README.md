@@ -1,32 +1,36 @@
 # Adso's Omarchy's waybar
 
-## Credit
+## 🎨 Credit
 
-* Waybar v1.3: write by me alone!
-* Waybar v1.3b: more customize for network module
-* Waybar v1.4: also by me but great inspiration from [forest green theme](https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main)!
+- **Waybar v1.3:** _Written by me alone!_
+- **Waybar v1.3b:** _More customization for the network module_
+- **Waybar v1.4:** _Also by me, with great inspiration from_ [**forest green theme**](https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main) 🌲
 
+---
 
-## Preview
+## 🖼️ Preview
 
-* Waybar v1.3)
+### Waybar v1.3
 ![Waybar 1.3](image/image.png)
 ![Waybar 1.3](image/image3.png)
 
-* Waybar v1.3b)
+### Waybar v1.3b
 ![Waybar 1.3b](image/image5.png)
 ![Waybar 1.3b](image/image6.png)
 
-* Waybar v1.4)
-
+### Waybar v1.4
 ![Waybar 1.4](image/image2.png)
 ![Waybar 1.4](image/image4.png)
 
-## Quick install
+---
 
-Choice what version of waybar u want to use, copy the command, paste it into ur terminal and everything will working smooth ^w^!
+## 🚀 Quick Install
 
-* Waybar v1.3
+Choose the version of Waybar you want to use, copy the command, paste it into your terminal, and everything will work smoothly >w<!✨
+
+<details>
+<summary><strong>Waybar v1.3</strong></summary>
+
 ```
 # clone the config from github
 git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
@@ -48,8 +52,11 @@ rm -rf Adsovetzky-Omarchy-s-Waybar
 omarchy-restart-waybar
 
 ```
+</details>
 
-* Waybar v1.3b
+<details>
+<summary><strong>Waybar v1.3b</strong></summary>
+
 ```
 # clone the config from github
 git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
@@ -71,8 +78,11 @@ rm -rf Adsovetzky-Omarchy-s-Waybar
 omarchy-restart-waybar
 
 ```
+</details>
 
-* Waybar v1.4
+<details>
+<summary><strong>Waybar v1.4</strong></summary>
+
 ```
 # clone the config from github
 git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
@@ -94,3 +104,4 @@ rm -rf Adsovetzky-Omarchy-s-Waybar
 omarchy-restart-waybar
 
 ```
+</details>
