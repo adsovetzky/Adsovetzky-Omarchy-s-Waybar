@@ -48,6 +48,7 @@ mpris#waybar.empty #mpris {
   opacity: 0.5;
 }
 
+#custom-update,
 #backlight,
 #window,
 #mpris,
@@ -73,6 +74,9 @@ mpris#waybar.empty #mpris {
 }
 #custom-omarchy {
   padding-left: 10px;
+}
+#custom-update {
+  padding-left: 7px; 
 }
 
 #custom-expand-icon {
