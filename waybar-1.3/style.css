@@ -16,6 +16,18 @@ window#waybar {
   margin-top: 10px;
 }
 
+window#waybar.empty #window {
+    background: transparent;
+    padding: 0;
+    margin-left: 0;
+}
+
+window#waybar.empty #mpris {
+  background: transparent;
+  padding: 0;
+  margin-right: 0;
+}
+
 .modules-left {
   margin-left: 8px;
 }
