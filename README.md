@@ -26,15 +26,17 @@
 
 ## 🚀 Quick Install
 
+* Before install waybar, if you want weather feature, install this package (skip if you aready had it)
+```
+yay -S wttr
+```
+
 Choose the version of Waybar you want to use, copy the command, paste it into your terminal, and everything will work smoothly >w<!✨
 
 <details>
 <summary><strong>Waybar v1.3</strong></summary>
 
 ```
-#install wttr package
-yay -S wttr
-
 # clone the config from github
 git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
 cd Adsovetzky-Omarchy-s-Waybar
