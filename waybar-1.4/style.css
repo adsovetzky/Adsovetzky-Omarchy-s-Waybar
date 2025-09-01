@@ -1,20 +1,89 @@
+@define-color base-bg @background;
+@define-color accent @foreground;
 @import "../omarchy/current/theme/waybar.css";
 
-* {
-  /* background-color: @background; */
-  color: @foreground;
+@define-color hover-bg alpha(@background, 0.7);
+@define-color warning #e5c07b;
+@define-color critical #e06c75;
+@define-color inactive #6a7a71;
 
-  border: none;
-  border-radius: 0;
-  min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
-  font-weight: bold;
-  font-size: 12px;
+* {
+    color: @foreground;
+    border: none;
+    border-radius: 0;
+    font-family: 'CaskaydiaMono Nerd Font';
+    font-size: 12px;
+    font-weight: bold;
+    min-height: 0;
 }
 
 window#waybar {
-  background: transparent;
-  margin-top: 10px;
+    background: transparent;
+    margin-top: 10px;
+}
+
+.modules-left, .modules-right {
+    margin-left: 8px;  /* Original margin + 2px */
+    margin-right: 8px; /* Original margin + 2px */
+}
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+/* --- General Module Styles --- */
+#backlight,
+#window,
+#mpris,
+#cpu,
+#memory,
+#temperature,
+#custom-update,
+#tray,
+#bluetooth,
+#network,
+#pulseaudio,
+#battery,
+#custom-omarchy,
+#clock {
+    background-color: @background;
+    color: @foreground;
+    padding: 0 10px;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+}
+
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#custom-update:hover,
+#bluetooth:hover,
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#custom-omarchy:hover {
+    background-color: @hover-bg;
+}
+
+/* --- Specific Module Styles & Overrides --- */
+#window {
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 16px;
+    margin-left: 5px;
+}
+
+#mpris {
+    margin: 5px 0;
+    padding: 0 10px;
+    border-radius: 16px;
+    margin-right: 5px;
 }
 
 window#waybar.empty #window {
@@ -29,69 +98,101 @@ mpris#waybar.empty #mpris {
   margin-right: 0;
 }
 
-.modules-left {
-  margin-left: 8px;
+#custom-update {
+    border-radius: 16px;
+    margin-left: 10px;
+    padding-right: 12px;
 }
 
-.modules-right {
-  margin-right: 8px;
+#tray-expander {
+    background: @background;
+    margin: 5px 0;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 10px;
+}
+
+#battery {
+    margin: 5px 0;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding-left: 10px;
+}
+
+#tray {
+    padding-left: 10px;
+}
+
+#custom-omarchy {
+    border-radius: 16px;
+    margin-right: 5px;
+}
+
+#clock {
+    border-radius: 16px;
+    padding-right: 10px;
+}
+
+#workspaces {
+    background-color: @background;
+    color: @foreground;
+    margin: 5px 0;
+    transition: background-color 0.3s ease;
+    border-radius: 16px;
+    padding: 0 3px;
 }
 
 #workspaces button {
-  all: initial;
-  padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+    background: transparent;
+    padding: 0 6px;
+    border-radius: 10px;
 }
 
-#workspaces button.empty {
-  opacity: 0.5;
+#workspaces button:hover {
+    background-color: alpha(#B9F6CA, 0.1);
 }
 
-#custom-weather,
-#memory,
-#custom-update,
-#backlight,
-#window,
-#mpris,
-#tray,
-#cpu,
-#battery,
-#network,
-#bluetooth,
-#pulseaudio,
-#clock,
-#custom-omarchy,
-#workspaces,
-#tray-expander {
-  background-color: @background;
-  color: @foreground;
-  border-radius: 10px;
-  padding: 0 10px;
-  margin: 5px 2;
+/* --- Module States --- */
+#network.disconnected,
+#bluetooth.disabled,
+#pulseaudio.muted {
+    color: @critical;
 }
 
-#network.icon {
-  padding-right: 14px;
-}
-#memory, #custom-weather {
-  margin-right: -10px;
-}
-#pulseaudio {
-  padding-right: 15px;
-}
-#custom-omarchy {
-  padding-left: 10px;
-}
-#custom-update {
-  padding-left: 7px;
+#battery.warning:not(.charging) {
+    color: @warning;
 }
 
-#custom-expand-icon {
-  margin-right: -4px;
+#battery.charging,
+#battery.plugged {
+    color: @accent;
 }
 
+@keyframes blink {
+    to {
+        background-color: @critical;
+        color: @base-bg;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: @critical;
+    color: @base-bg;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* --- Tooltip --- */
 tooltip {
-  border-radius: 10px;
-  padding: 2px;
+    background-color: @background;
+    border-radius: 16px;
+    padding: 8px 12px;
+    opacity: 0.9;
+}
+
+tooltip label {
+    color: @foreground;
 }
