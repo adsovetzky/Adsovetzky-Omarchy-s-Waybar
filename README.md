@@ -1,5 +1,8 @@
 # Adso's Omarchy's waybar
 
+## ✌️ Update
+[Full releases here](https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar/releases)
+
 ## 🎨 Credit
 
 - **Waybar v1.3:** _Written by me alone!_
