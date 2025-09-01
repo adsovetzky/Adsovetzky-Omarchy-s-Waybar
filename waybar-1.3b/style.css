@@ -48,6 +48,8 @@ mpris#waybar.empty #mpris {
   opacity: 0.5;
 }
 
+#custom-weather,
+#memory,
 #custom-update,
 #backlight,
 #window,
@@ -72,7 +74,9 @@ mpris#waybar.empty #mpris {
 #network.icon {
   padding-right: 14px;
 }
-
+#memory, #custom-weather {
+  margin-right: -10px;
+}
 #pulseaudio {
   padding-right: 15px;
 }
@@ -90,5 +94,4 @@ mpris#waybar.empty #mpris {
 tooltip {
   border-radius: 10px;
   padding: 2px;
-  opacity: 0.9;
 }

@@ -112,14 +112,14 @@
     "format-alt": "{:%A %d/%m/%Y}",
     "tooltip-format": "<span>{calendar}</span>",
     "calendar": {
-      "mode": "mouth",
+      "mode": "month",
       "mode-mon-col": 3,
       "on-click-right": "mode",
       "format": {
         "mouth": "<span color='#ffead3'><b>{}</b></span>",
         "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b>{}</b></span>",
-      },
+        "today": "<span color='#ff6699'><b>{}</b></span>"
+      }
     },
     "on-click-right": "~/.local/share/omarchy/bin/omarchy-cmd-tzupdate"
   },
@@ -171,7 +171,10 @@
     },
     "modules": [
       "custom/expand-icon",
-      "tray"
+      "tray",
+      "weather",
+      "memory",
+      "custom/weather"
     ]
   },
   "custom/expand-icon": {
@@ -181,6 +184,18 @@
   "tray": {
     "icon-size": 12,
     "spacing": 12
+  },
+  "memory": { 
+    "format": " {used:0.1f}gb",
+    "interval": 2,
+    "on-click": "alacritty -e btop"
+  },
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 600,
+    "exec": "wttrbar",
+    "return-type": "json"
   },
   "mpris": {
     "format": "{player_icon} {artist} - {title}",
