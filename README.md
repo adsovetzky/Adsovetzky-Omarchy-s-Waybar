@@ -3,7 +3,7 @@
 ## ✌️ Update
 [Full releases here](https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar/releases)
 
-## 🎨 Credit
+## 🎨 Credit + describe
 
 - **Waybar v1.3:** _Written by me alone!_
 - **Waybar v1.3a:** _it v1.3b but move the weather module into middle_
