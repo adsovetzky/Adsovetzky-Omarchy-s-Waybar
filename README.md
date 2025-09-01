@@ -29,7 +29,7 @@
 
 ## 🚀 Quick Install
 
-* Before install waybar, if you want weather feature, install this package (skip if you aready had it)
+Before install waybar, if you want weather feature, install this package (skip if you aready had it)
 ```
 yay -S wttr
 ```
