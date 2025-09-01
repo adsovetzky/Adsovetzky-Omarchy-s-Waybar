@@ -28,8 +28,7 @@
 ![Waybar 1.3b](image/image6.png)
 
 ### Waybar v1.3c
-![Waybar 1.3c](image/image5.png)
-![Waybar 1.3c](image/image6.png)
+![Waybar 1.3c](image/image9.png)
 
 ### Waybar v1.4
 ![Waybar 1.4](image/image2.png)
