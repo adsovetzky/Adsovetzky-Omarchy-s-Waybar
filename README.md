@@ -22,22 +22,22 @@
 ![Waybar 1.3](image/image.png)
 ![Waybar 1.3](image/image3.png)
 
-### Waybar v1.3a
+#### Waybar v1.3a
 ![Waybar 1.3a](image/image7.png)
 ![Waybar 1.3a](image/image8.png)
 
-### Waybar v1.3b
+#### Waybar v1.3b
 ![Waybar 1.3b](image/image5.png)
 ![Waybar 1.3b](image/image6.png)
 
-### Waybar v1.3c
+#### Waybar v1.3c
 ![Waybar 1.3c](image/image9.png)
 
-### Waybar v1.4
+#### Waybar v1.4
 ![Waybar 1.4](image/image2.png)
 ![Waybar 1.4](image/image4.png)
 
-## Vertical waybar:
+### Vertical waybar:
 ![Waybar 1.5](image/image10.png)
 ![Waybar 1.5](image/image11.png)
 ---
