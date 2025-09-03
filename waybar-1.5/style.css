@@ -1,0 +1,77 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+  background-color: @background;
+  color: @foreground;
+
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  min-width: 0px;
+  font-family: CaskaydiaMono Nerd Font;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 5 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#custom-weather,
+#memory,
+#custom-update,
+#backlight,
+#window,
+#mpris,
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#clock,
+#custom-omarchy,
+#workspaces,
+#tray-expander { 
+  min-width: 0px;
+  margin: 7.5 5px;
+}
+
+#custom-expand-icon {
+  margin-right: -5px;
+  padding: 1px;
+}
+
+#network {
+  margin-left: 2px;
+}
+#memory {
+  margin-left: 0px;
+}
+#tray {
+  margin-right: 2px;
+}
+#battery {
+  margin-bottom: 10px;
+}
+#backlight {
+  margin-right: 8px;
+}
+#clock {
+  font-size: 20px;
+}
+#custom-omarchy {
+  margin-top: 10px;
+}
+tooltip {
+  padding: 0px;
+}
+
+
