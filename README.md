@@ -10,7 +10,7 @@
 - **Waybar v1.3b:** _More customization for the network module_
 - **Waybar v1.3c:** _Omarchy default waybar but with all v1.3 modules!_
 - **Waybar v1.4:** _Also by me, with great inspiration from_ [**forest green theme**](https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main) 🌲
-- **Waybar v1.5** _it v1.3 but in portrait orientation LOL (at this one, i remove mrpis, window and weather cuz it is too cumbersome to display it vertically)_
+- **Waybar v1.5** _it v1.3 but in portrait orientation LOL (at this one, i remove mrpis, window and weather cuz it is too cumbersome to display it vertically, I would be shocked if someone actually used this as a waybar lfmao)_
 
 ---
 
