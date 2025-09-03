@@ -10,12 +10,15 @@
 - **Waybar v1.3b:** _More customization for the network module_
 - **Waybar v1.3c:** _Omarchy default waybar but with all v1.3 modules!_
 - **Waybar v1.4:** _Also by me, with great inspiration from_ [**forest green theme**](https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main) 🌲
+- **Waybar v1.5** _it v1.3 but in portrait orientation LOL_
 
 ---
 
 ## 🖼️ Preview
 
-### Waybar v1.3
+### Horizontal waybar:
+
+#### Waybar v1.3
 ![Waybar 1.3](image/image.png)
 ![Waybar 1.3](image/image3.png)
 
@@ -34,6 +37,9 @@
 ![Waybar 1.4](image/image2.png)
 ![Waybar 1.4](image/image4.png)
 
+## Vertical waybar:
+![Waybar 1.5](image/image10.png)
+![Waybar 1.5](image/image11.png)
 ---
 
 ## 🚀 Quick Install
@@ -164,6 +170,32 @@ mkdir -p ~/.config/waybar/backup-waybar
 # Replace with the new Waybar config!
 cp -r ./waybar-1.4/config.jsonc ~/.config/waybar/
 cp -r ./waybar-1.4/style.css ~/.config/waybar/
+
+# Delete the clone
+cd ..
+rm -rf Adsovetzky-Omarchy-s-Waybar
+
+# And now restart ur Waybar!!!
+omarchy-restart-waybar
+
+```
+</details>
+
+<details>
+<summary><strong>Waybar v1.5</strong></summary>
+
+```
+# clone the config from github
+git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
+cd Adsovetzky-Omarchy-s-Waybar
+
+# Backup ur current config and style into "backup" folder
+mkdir -p ~/.config/waybar/backup-waybar
+[ -d ~/.config/waybar ] && mv ~/.config/waybar/* ~/.config/waybar/backup-waybar/ 2>/dev/null
+
+# Replace with the new Waybar config!
+cp -r ./waybar-1.5/config.jsonc ~/.config/waybar/
+cp -r ./waybar-1.5/style.css ~/.config/waybar/
 
 # Delete the clone
 cd ..
