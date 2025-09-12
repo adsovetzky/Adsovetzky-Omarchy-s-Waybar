@@ -160,7 +160,7 @@ omarchy-restart-waybar
 </details>
 
 <details>
-<summary><strong>Waybar v1.3c</strong></summary>
+<summary><strong>Waybar v1.3c.2</strong></summary>
 
 ```
 # clone the config from github
