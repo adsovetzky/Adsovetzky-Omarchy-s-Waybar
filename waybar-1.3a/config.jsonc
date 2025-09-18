@@ -152,7 +152,7 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray", "memory", "custom/weather"]
+    "modules": ["custom/expand-icon", "tray", "memory"]
   },
   "custom/expand-icon": {
     "format": " ",
