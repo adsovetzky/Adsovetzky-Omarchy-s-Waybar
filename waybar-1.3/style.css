@@ -71,7 +71,6 @@ tooltip {
 
 #clock {
   background-color: @background;
-  margin-left: 8.75px;
 
   border-radius: 10px;
   padding: 0 10 0 10;
@@ -114,4 +113,8 @@ tooltip {
 }
 #mpris {
   margin-right: 5px;
+}
+
+tooltip {
+  border-radius: 10px;
 }
