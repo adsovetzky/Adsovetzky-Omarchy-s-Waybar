@@ -4,7 +4,7 @@
   "position": "left",
   
   "modules-left": [ "custom/omarchy", "hyprland/workspaces"],
-  "modules-center": [ "clock", "custom/update" ],
+  "modules-center": [ "clock", "custom/update", "custom/screenrecording-indicator" ],
   "modules-right": [ "group/tray-expander", "backlight", "network", "pulseaudio", "bluetooth", "battery"],
 
   "hyprland/workspaces": {
@@ -160,6 +160,14 @@
     "exec": "wttrbar",
     "return-type": "json"
   },
+
+  "custom/screenrecording-indicator": {
+    "on-click": "omarchy-cmd-screenrecord",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
+    "signal": 8,
+    "return-type": "json"
+  },
+
   "mpris": {
     "format": "{player_icon} {artist} - {title}",
     "format-paused": "{status_icon} <i>{artist} - {title}</i>",
