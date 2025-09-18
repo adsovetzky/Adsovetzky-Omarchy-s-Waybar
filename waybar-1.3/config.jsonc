@@ -166,6 +166,14 @@
       "on-click": "$TERMINAL -e btop"
   },
 
+  "custom/weather": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 600,
+    "exec": "wttrbar",
+    "return-type": "json"
+  },
+
   "mpris": {
     "format": "{player_icon} {artist} - {title}",
     "format-paused": "{status_icon} <i>{artist} - {title}</i>",
