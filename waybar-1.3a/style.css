@@ -7,8 +7,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
-  font-weight: bold;
+  font-family: CaskaydiaMono Nerd Font;
   font-size: 12px;
 }
 
@@ -17,24 +16,16 @@ window#waybar {
   margin-top: 10px;
 }
 
-window#waybar.empty #window {
-    background: transparent;
-    padding: 0;
-    margin-left: 0;
-}
-
-mpris#waybar.empty #mpris {
+window#waybar.empty #window{
   background: transparent;
+  color: transparent;
   padding: 0;
-  margin-right: 0;
+  margin-left: 5;
+  transition: .5s;
 }
 
-.modules-left {
-  margin-left: 8px;
-}
-
-.modules-right {
-  margin-right: 8px;
+mpris.empty {
+  background: transparent;
 }
 
 #workspaces button {
@@ -48,50 +39,82 @@ mpris#waybar.empty #mpris {
   opacity: 0.5;
 }
 
-#custom-weather,
-#memory,
-#custom-update,
-#backlight,
-#window,
-#mpris,
+#backlight, #custom-weather, #memory, #mpris, #window,
 #tray,
 #cpu,
 #battery,
 #network,
 #bluetooth,
 #pulseaudio,
-#clock,
 #custom-omarchy,
-#workspaces,
-#tray-expander {
+#custom-screenrecording-indicator,
+#custom-update {
   background-color: @background;
-  color: @foreground;
+  min-width: 12px;
+
   border-radius: 10px;
   padding: 0 10px;
-  margin: 5px 2;
-}
-
-#network.icon {
-  padding-right: 14px;
-}
-#memory {
-  margin-right: -10px;
-}
-#pulseaudio {
-  padding-right: 15px;
-}
-#custom-omarchy {
-  padding-left: 10px;
-}
-#custom-update {
-  padding-left: 7px;
+  margin: 0 0 0 5;
 }
 
 #custom-expand-icon {
-  margin-right: -4px;
+  margin-right: 7px;
 }
 
 tooltip {
-  border-radius: 10px;
   padding: 2px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  background-color: @background;
+  margin-left: 8.75px;
+
+  border-radius: 10px;
+  padding: 0 10 0 10;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+
+  padding: 0 11 0 10;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+
+/* EXTRA FIX! */
+#workspaces {
+  background-color: @background;
+  border-radius: 10px;
+  margin-left: 5px;
+  padding: 0 5 0 5;
+}
+#tray-expander {
+  background-color: @background;
+  border-radius: 10px;
+  padding: 0 0 0 10;
+}
+#pulseaudio {
+  padding: 0 15 0 10;
+}
+#tray {
+  margin: 0; 
+}
+#mpris {
+  margin-right: 5px;
+}
+#network.icon{
+  padding: 0 13 0 9;
 }
