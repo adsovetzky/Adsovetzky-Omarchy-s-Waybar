@@ -71,7 +71,6 @@ tooltip {
 
 #clock {
   background-color: @background;
-  margin-left: 8.75px;
 
   border-radius: 10px;
   padding: 0 10 0 10;
@@ -117,4 +116,8 @@ tooltip {
 }
 #network.icon{
   padding: 0 13 0 9;
+}
+
+tooltip {
+  border-radius: 10px;
 }
