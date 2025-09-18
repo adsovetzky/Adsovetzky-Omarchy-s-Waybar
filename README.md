@@ -5,7 +5,7 @@
 
 ## 🎨 Credit + describe
 
-- **Waybar v1.3:** _Written by me alone!_
+- **Waybar v1.3:** _Written by me alone!_ (only this one is up to omarchy 3.0) 
 - **Waybar v1.3a:** _it v1.3b but move the weather module into middle_
 - **Waybar v1.3b:** _More customization for the network module_
 - **Waybar v1.3c:** _Omarchy default waybar but with all v1.3 modules!_
