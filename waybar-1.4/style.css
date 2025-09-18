@@ -13,7 +13,6 @@
     border-radius: 0;
     font-family: 'CaskaydiaMono Nerd Font';
     font-size: 12px;
-    font-weight: bold;
     min-height: 0;
 }
 
@@ -51,6 +50,7 @@ window#waybar {
 #pulseaudio,
 #battery,
 #custom-omarchy,
+#custom-screenrecording-indicator,
 #clock {
     background-color: @background;
     color: @foreground;
@@ -59,6 +59,8 @@ window#waybar {
     transition: background-color 0.3s ease;
 }
 
+#clock:hover,
+#mpris:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
@@ -67,11 +69,26 @@ window#waybar {
 #network:hover,
 #pulseaudio:hover,
 #battery:hover,
+#custom-screenrecording-indicator:hover,
 #custom-omarchy:hover {
     background-color: @hover-bg;
 }
 
 /* --- Specific Module Styles & Overrides --- */
+
+#custom-screenrecording-indicator {
+  border-radius: 16px;
+  min-width: 12px;
+  margin-left: 8.75px;
+  font-size: 10px;
+
+  padding: 0 11 0 10;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
 #window {
     margin: 5px 0;
     padding: 0 10px;
