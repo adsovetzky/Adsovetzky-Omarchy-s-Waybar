@@ -16,17 +16,16 @@ window#waybar {
   margin-top: 10px;
 }
 
-window#waybar.empty {
+window#waybar.empty #window{
   background: transparent;
-  transition: 1s;
+  color: transparent;
+  padding: 0;
+  margin-left: 5;
+  transition: .5s;
 }
 
-.modules-left {
-  margin-left: 8px;
-}
-
-.modules-right {
-  margin-right: 8px;
+mpris.empty {
+  background: transparent;
 }
 
 #workspaces button {
@@ -112,4 +111,7 @@ tooltip {
 }
 #tray {
   margin: 0; 
+}
+#mpris {
+  margin-right: 5px;
 }
