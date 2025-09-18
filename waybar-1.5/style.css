@@ -62,7 +62,7 @@
   margin-bottom: 10px;
 }
 #backlight {
-  margin-right: 8px;
+  margin-right: 3px;
 }
 #clock {
   font-size: 20px;
@@ -76,7 +76,7 @@ tooltip {
 
 #custom-screenrecording-indicator {
   min-width: 12px;
-  margin-right: 10px;
+  margin-right: 5px;
   margin-top: 10px;
   font-size: 15px;
 }
