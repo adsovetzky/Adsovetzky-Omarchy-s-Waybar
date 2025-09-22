@@ -114,8 +114,8 @@ mpris.empty {
 }
 
 #custom-screenrecording-indicator {
+  border-radius: 10px;
   min-width: 12px;
-  margin-left: 8.75px;
   font-size: 10px;
 
   padding: 0 11 0 10;
