@@ -41,6 +41,10 @@
 ![Waybar 1.4](image/image2.png)
 ![Waybar 1.4](image/image4.png)
 
+#### Waybar v1.6
+![Waybar 1.6](image/image13.png)
+![Waybar 1.6](image/image14.png)
+
 ### Vertical waybar:
 ![Waybar 1.5](image/image10.png)
 ![Waybar 1.5](image/image11.png)
@@ -236,3 +240,30 @@ omarchy-restart-waybar
 
 ```
 </details>
+
+<details>
+<summary><strong>Waybar v1.6</strong></summary>
+
+```
+# clone the config from github
+git clone https://github.com/adsovetzky/Adsovetzky-Omarchy-s-Waybar.git
+cd Adsovetzky-Omarchy-s-Waybar
+
+# Backup ur current config and style into "backup" folder
+mkdir -p ~/.config/waybar/backup-waybar
+[ -d ~/.config/waybar ] && mv ~/.config/waybar/* ~/.config/waybar/backup-waybar/ 2>/dev/null
+
+# Replace with the new Waybar config!
+cp -r ./waybar-1.6/config.jsonc ~/.config/waybar/
+cp -r ./waybar-1.6/style.css ~/.config/waybar/
+
+# Delete the clone
+cd ..
+rm -rf Adsovetzky-Omarchy-s-Waybar
+
+# And now restart ur Waybar!!!
+omarchy-restart-waybar
+
+```
+</details>
+
