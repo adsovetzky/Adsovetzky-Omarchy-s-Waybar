@@ -12,6 +12,7 @@
 - **Waybar v1.3c.2:** _Stil v1.3c but it float (what wrong with me)_
 - **Waybar v1.4:** _Also by me, with great inspiration from_ [**forest green theme**](https://github.com/abhijeet-swami/omarchy-forest-green-theme/tree/main) 🌲
 - **Waybar v1.5** _it v1.3 but in portrait orientation LOL (at this one, i remove mrpis, window and weather cuz it is too cumbersome to display it vertically, I would be shocked if someone actually used this as a waybar lfmao)_
+- **Waybar v1.6** _Aright. this is v1.3 but with google materials style_
 
 ---
 
