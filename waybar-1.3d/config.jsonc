@@ -202,6 +202,7 @@
       "format": "{percentage_used}% 󰋊 ",
       "path": "/",
       "tooltip-format": "{used} from {total} used in /",
-      "interval": 30
+      "interval": 30,
+      "on-click": "$TERMINAL -e ncdu /"
   }
 }
