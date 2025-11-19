@@ -1,8 +1,8 @@
 @import "../omarchy/current/theme/waybar.css";
 
 * {
-  background-color: @background;
-  color: @foreground;
+  /* background-color: @background; */
+  /* color: @foreground; */
 
   border: none;
   border-radius: 0;
@@ -13,13 +13,35 @@
   font-size: 12px;
 }
 
+window#waybar {
+  background-color: @background;
+  color: @foreground;
+}
+
+#workspaces {
+  background-color: @foreground;
+  border-radius: 20px;
+}
+
+
 #workspaces button {
   all: initial;
   padding: 0 6px;
-  margin: 5 1.5px;
+  margin:3 3 3px;
   min-width: 9px;
-}
 
+  background-color: @background;
+  border-radius: 10px;
+  padding: 03 5;
+  transition: all 0.15s ease-in-out;
+
+}
+#workspaces button.active, #workspaces button:hover {
+  background-color: @background;
+  border-radius: 10px;
+  padding: 15 0;
+  transition: all 0.15s ease-in-out;
+}
 #workspaces button.empty {
   opacity: 0.5;
 }
