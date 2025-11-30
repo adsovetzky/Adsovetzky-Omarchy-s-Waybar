@@ -16,6 +16,9 @@
 
 ---
 
+## NOTE (before try these waybar)
+- i didnt update the bluetooth module to omarchy 3.2 cuz lack of time, so if u still want to try, make sure you are do it urself 
+
 ## 🖼️ Preview
 
 ### Horizontal waybar:
