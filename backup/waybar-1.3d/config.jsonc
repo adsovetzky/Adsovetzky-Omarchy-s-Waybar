@@ -10,7 +10,7 @@
   "margin-right": 3,
   "margin-bottom": -7,
 
-  "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window", "cava"],
+  "modules-left": ["custom/omarchy", "hyprland/workspaces", "hyprland/window"],
   "modules-center": ["clock", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "mpris",
@@ -204,15 +204,5 @@
       "tooltip-format": "{used} from {total} used in /",
       "interval": 30,
       "on-click": "$TERMINAL -e ncdu /"
-  },
-  "cava": {
-      "cava_config": "~/.config/cava/config",  // Caminho pro config do cava (opcional, use o padrão se não tiver)
-      "framerate": 60,                         // Taxa de atualização (ajuste pra performance)
-      "bars": 20,                              // Número de barras (ajuste pro tamanho da bar)
-      "format": "{prefix}{icon}",              // Formato de exibição
-      "format-prefix": "♪ ",                   // Ícone antes das barras (opcional)
-      "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"],  // Estilo das barras (use fontes como Nerd Fonts pra glifos)
-      "max": 100,                              // Altura máxima das barras
-      "on-click": "cava"                       // Clique pra abrir cava no terminal (opcional)
   }
 }
